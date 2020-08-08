@@ -146,7 +146,14 @@
     }
   }
   @else {
-    @error "No value could be retrieved for '#{$break}'";
+    @if (type-of($break) == 'number') {
+      @media (min-width: $break + 'px') {
+        // browser width >= given breakpoint in number
+        @content;
+      }
+    } @else {
+      @error "No value could be retrieved for '#{$break}'";
+    }
   }
 }
 

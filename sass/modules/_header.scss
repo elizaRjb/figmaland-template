@@ -1,0 +1,123 @@
+.header {
+  position: relative;
+  padding: 25px 0 24px;
+  background-color: $cod-gray;
+
+  @include mq(md) {
+    padding: 30px 0;
+  }
+
+  @include e(container) {
+    @include mq(md) {
+      padding: 0 30px;
+      max-width: 1097px;
+    }
+  }
+
+  @include e(logo) {
+    width: 135px;
+    display: inline-block;
+
+    @include mq(375) {
+      width: 148px;
+      margin-left: 8px;
+    }
+
+    @include mq(549) {
+      width: 186px;
+      margin-left: 18px;
+    }
+
+    @include mq(xl) {
+      margin: 0;
+    }
+  }
+
+  @include e(right) {
+    line-height: 1;
+    margin-top: 3px;
+
+    @include mq(md) {
+      width: 68.63%;
+    }
+  }
+
+  @include e(nav) {
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: 100;
+    display: none;
+    position: absolute;
+
+    @include m(open) {
+      display: block;
+
+      @include mq(md) {
+        animation: none;
+      }
+    }
+
+    @include mq(md) {
+      float: left;
+      display: block;
+      position: static;
+      box-shadow: none;
+      margin-top: 14px;
+    }
+  }
+
+  @include e(ghost-btn) {
+    float: left;
+    width: 80px;
+    padding: 6px 8px;
+    line-height: 1.45;
+    font-size: 1.0625rem;
+
+    @include mq(375) {
+      width: 100px;
+      padding: 10px 8px;
+    }
+
+    @include mq(549) {
+      width: 139px;
+      padding: 13px 12px;
+    }
+
+    @include mq(md) {
+      float: right;
+    }
+  }
+
+  @include e(menu-btn) {
+    border: 0;
+    width: 52px;
+    height: 38px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 8px;
+    background: url(/images/menu.svg) no-repeat center;
+
+    &:hover,
+    &:focus {
+      transition: all 0.25s ease-in;
+      background-image: url(/images/menu-hover.svg);
+    }
+
+    @include mq(375) {
+      width: 58px;
+      height: 46px;
+      margin-left: 12px;
+    }
+
+    @include mq(549) {
+      width: 66px;
+      height: 52px;
+      margin-left: 16px;
+    }
+
+    @include mq(md) {
+      display: none;
+    }
+  }
+}

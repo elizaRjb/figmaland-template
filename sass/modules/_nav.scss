@@ -1,0 +1,61 @@
+.nav {
+  li {
+    position: relative;
+
+    @include mq(md) {
+      float: left;
+      margin-right: 28px;
+    }
+
+    @include mq(lg) {
+      margin-right: 50px;
+    }
+
+    &::after {
+      bottom: 0;
+      right: auto;
+      height: 1px;
+      width: 30px;
+      margin: 0 auto;
+      position: absolute;
+      left: calc(50% - 15px);
+      background-color: rgba(255, 255, 255, 0.25);
+
+      @include mq(md) {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+
+      @include mq(md) {
+        margin-right: 0;
+      }
+    }
+
+    a {
+      padding: 12px;
+      color: $white;
+      display: block;
+      text-align: center;
+      font: normal 500 1rem/1.5 $font-family--primary;
+
+      &:hover,
+      &:focus {
+        color: $primary-color;
+        background-color: rgba(255, 255, 255, 0.05);
+
+        @include mq(md) {
+          background-color: transparent;
+        }
+      }
+
+      @include mq(md) {
+        padding: 0;
+      }
+    }
+  }
+}

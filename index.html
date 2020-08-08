@@ -10,7 +10,50 @@
 	<!--endbuild-->
 </head>
 <body>
-  <img src="/images/logo.svg" alt="Figma Land">
-  <h1>Figma land template</h1>
+  <div class="main-container-wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <a href="#" class="header__logo left" title="Figma Land">
+          <img src="./images/logo.svg" alt="Figma Land" />
+        </a>
+        <div class="header__right right">
+          <ul id="nav" class="nav header__nav">
+            <li>
+              <a href="#" title="Home">Home</a>
+            </li>
+            <li>
+              <a href="#" title="Product">Product</a>
+            </li>
+            <li>
+              <a href="#" title="About">About</a>
+            </li>
+            <li>
+              <a href="#" title="Contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#" class="ghost-btn header__ghost-btn" title="Login">Login</a>
+          <button id="burgerMenuBtn" type="button" class="header__menu-btn"></button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+
+  <script>
+    var showNav = false;
+    var nav = document.getElementById('nav');
+    var burgerMenuBtn = document.getElementById('burgerMenuBtn');
+
+    burgerMenuBtn.onclick = function(e) {
+      showNav = !showNav;
+
+      if (showNav) {
+        nav.classList.add('header__nav--open');
+      } else {
+        nav.classList.remove('header__nav--open');
+      }
+    };
+
+  </script>
 </body>
 </html>

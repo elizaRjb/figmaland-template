@@ -1,0 +1,19 @@
+.ghost-btn {
+  color: $white;
+  outline: none;
+  text-align: center;
+  letter-spacing: 0.2px;
+  display: inline-block;
+  background: transparent;
+  border: 1px solid $white;
+  font-family: $font-family--primary;
+  -moz-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+    transition: all 0.25s ease-in;
+  }
+}
