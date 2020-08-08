@@ -828,10 +828,10 @@ img {
     outline: none;
     cursor: pointer;
     margin-left: 8px;
-    background: url(/images/menu.svg) no-repeat center; }
+    background: url("../images/menu.svg") no-repeat center; }
     .header__menu-btn:hover, .header__menu-btn:focus {
       transition: all 0.25s ease-in;
-      background-image: url(/images/menu-hover.svg); }
+      background-image: url("../images/menu-hover.svg"); }
     @media (min-width: 375px) {
       .header__menu-btn {
         width: 58px;
@@ -909,14 +909,14 @@ img {
     content: '';
     height: 543px;
     margin-top: 57px;
-    background: linear-gradient(180deg, transparent 0%, transparent 23%, rgba(30, 30, 30, 0) 24%, #0E0E0E 100%), url(/images/hero-bg-sm.png) no-repeat;
+    background: linear-gradient(180deg, transparent 0%, transparent 23%, rgba(30, 30, 30, 0) 24%, #0E0E0E 100%), url("../images/hero-bg-sm.png") no-repeat;
     background-position: center top;
     background-size: cover; }
     @media (min-width: 549px) {
       .hero-section__banner {
         height: 993px;
         margin-top: 35px;
-        background: linear-gradient(180deg, transparent 0%, transparent 44%, rgba(30, 30, 30, 0) 45%, #0E0E0E 100%), url(/images/hero-bg-lg.png) no-repeat center top;
+        background: linear-gradient(180deg, transparent 0%, transparent 44%, rgba(30, 30, 30, 0) 45%, #0E0E0E 100%), url("../images/hero-bg-lg.png") no-repeat center top;
         background-size: auto; } }
 
 .features-section {
@@ -964,15 +964,12 @@ img {
       margin-bottom: 35px; }
       .features-section__list li:last-child {
         margin-bottom: 0; }
-  .features-section__list-header {
-    display: flex;
-    align-items: flex-start; }
-    .features-section__list-header img {
-      margin-top: 15px; }
-    .features-section__list-header span {
-      padding: 10px;
-      display: inline-block;
-      font: normal 500 1.25rem/1.5 "GraphikMedium", "Arial", sans-serif; }
+  .features-section__list-header img {
+    margin-top: 15px; }
+  .features-section__list-header span {
+    padding: 10px;
+    display: inline-block;
+    font: normal 500 1.25rem/1.5 "GraphikMedium", "Arial", sans-serif; }
   .features-section__list-text {
     padding: 10px;
     font: normal normal 1rem/1.5 "Graphik", "Arial", sans-serif; }
