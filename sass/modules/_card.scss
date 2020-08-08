@@ -1,0 +1,26 @@
+.card {
+  border-radius: 10px;
+  padding: 50px 25px 40px;
+  border: 1px solid $alto;
+  background-color: $white;
+  -moz-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+
+  @include e(title) {
+    color: $black;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    letter-spacing: 0.1px;
+  }
+
+  @include e(text) {
+    margin: 0 auto;
+    font-size: 1rem;
+    color: $scorpion;
+    line-height: 1.5;
+    max-width: 268px;
+    letter-spacing: 0.2px;
+  }
+}

@@ -8,3 +8,9 @@
 //   .input__material--right {@extend %input; float: right;}
 // }
 // ==========================================================================
+
+.hide-from-tablet {
+  @include mq(md) {
+    display: none;
+  }
+}

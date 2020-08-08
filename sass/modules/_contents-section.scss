@@ -1,0 +1,78 @@
+.contents-section {
+  @include e(text) {
+    max-width: 288px;
+
+    @include mq(md) {
+      max-width: 571px;
+    }
+  }
+
+  @include e(cards-container-wrapper) {
+    margin-top: 54px;
+
+    @include mq(md) {
+      max-width: 985px;
+      margin: 54px auto 0;
+    }
+  }
+
+  @include e(cards-container) {
+    padding: 0 20px;
+
+    @include mq(md) {
+      padding: 0;
+      margin: 0 -16px;
+    }
+  }
+
+  @include e(card-wrapper) {
+    margin: 0 auto;
+    max-width: 348px;
+
+    @include mq(md) {
+      width: 50%;
+      float: left;
+      padding: 0 16px;
+      max-width: none;
+    }
+
+    & + & {
+      margin-top: 33px;
+
+      @include mq(md) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include e(card-btn) {
+    margin-top: 57px;
+    line-height: 1.47;
+    padding: 14px 46px;
+    font-size: 1.0625rem;
+
+    @include m(sm-margin) {
+      margin-top: 40px;
+    }
+  }
+
+  @include e(card-image) {
+    width: 100%;
+    max-width: 297px;
+    margin-top: 57px;
+
+    @include mq(md) {
+      max-width: 405px;
+    }
+
+    @include m(sm) {
+      margin-top: 30px;
+      max-width: 280px;
+
+      @include mq(md) {
+        margin-top: 35px;
+        max-width: 379px;
+      }
+    }
+  }
+}
