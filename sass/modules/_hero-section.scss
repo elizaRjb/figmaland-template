@@ -1,6 +1,7 @@
 .hero-section {
   padding: 67px 0 0;
   text-align: center;
+  margin-bottom: 101px;
   letter-spacing: 0.2px;
 
   @include mq(md) {
@@ -17,6 +18,7 @@
       line-height: 1.1;
       max-width: 709px;
       margin-bottom: 37px;
+      font-family: $font-family--primary;
     }
   }
 
