@@ -1,0 +1,96 @@
+.hero-section {
+  padding: 67px 0 0;
+  text-align: center;
+  letter-spacing: 0.2px;
+
+  @include mq(md) {
+    padding-top: 95px;
+  }
+
+  @include e(heading) {
+    max-width: 294px;
+    margin: 0 auto 27px;
+    font: normal normal 3.25rem/1.12 $font-family--secondary;
+
+    @include mq(md) {
+      font-size: 5rem;
+      line-height: 1.1;
+      max-width: 709px;
+      margin-bottom: 37px;
+    }
+  }
+
+  @include e(text) {
+    margin: 0 auto;
+    max-width: 378px;
+    font: normal normal 1.25rem/1.5 $font-family--secondary;
+
+    @include mq(md) {
+      max-width: 582px;
+    }
+  }
+
+  @include e(line-break) {
+    display: none;
+
+    @include mq(411) {
+      display: initial;
+    }
+
+    @include mq(md) {
+      display: none;
+    }
+  }
+
+  @include e(btn-container) {
+    line-height: 1;
+    margin-top: 67px;
+
+    @include mq(md) {
+      font-size: 0;
+      margin-top: 95px;
+    }
+  }
+
+  @include e(btn) {
+    width: 178px;
+    padding: 20px;
+    display: block;
+    margin: 0 auto;
+    line-height: 1.48;
+    font-size: 1.0625rem;
+
+    @include mq(md) {
+      display: inline-block;
+    }
+  }
+
+  @include e(primary-btn) {
+    margin-bottom: 21px;
+
+    @include mq(md) {
+      margin: 0 35px 0 0;
+    }
+  }
+
+  @include e(ghost-btn) {
+    padding: 19px 20px;
+  }
+
+  @include e(banner) {
+    width: 100%;
+    content: '';
+    height: 543px;
+    margin-top: 57px;
+    background: linear-gradient(180deg, transparent 0%, transparent 23%, rgba(30, 30, 30, 0) 24%, #0E0E0E 100%), url(/images/hero-bg-sm.png) no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    @include mq(549) {
+      height: 993px;
+      margin-top: 35px;
+      background: linear-gradient(180deg, transparent 0%, transparent 44%, rgba(30, 30, 30, 0) 45%, #0E0E0E 100%), url(/images/hero-bg-lg.png) no-repeat center top;
+      background-size: auto;
+    }
+  }
+}
