@@ -31,10 +31,11 @@ $base__line: 24px;
 
 $font-family-sans-fallback: 'Arial', sans-serif;
 $font-family-sans: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', $font-family-sans-fallback;
-$font-family-serif: 'Georgia', 'Cambria', 'Times New Roman', 'Times', serif;
-$font-family-monospace: 'Inconsolata', 'Menlo', 'Consolas', 'Bitstream Vera Sans Mono', 'Courier', monospace;
-$font-family--primary : $font-family-sans;
-$font-family--secondary : $font-family-sans;
+$font-family-Graphik: 'Graphik', $font-family-sans-fallback;
+$font-family-Graphik-Medium: 'GraphikMedium', $font-family-sans-fallback;
+
+$font-family--primary : $font-family-Graphik-Medium;
+$font-family--secondary : $font-family-Graphik;
 
 //Colors
 $white: #fff;
