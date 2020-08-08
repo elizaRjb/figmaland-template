@@ -38,8 +38,11 @@ $font-family--primary : $font-family-Graphik-Medium;
 $font-family--secondary : $font-family-Graphik;
 
 //Colors
+$cod-gray: #181818;
+$dodger-blue: #4452FE;
 $white: #fff;
 $black: #000;
+$dark-blue: #0000bc;
 $gray: #c7c7c7;
 $red: #D24D57;
 $blue: #3A539B;
@@ -93,13 +96,15 @@ $head2-font-size: $head1-font-size - 4px !default;
 $head3-font-size: $head1-font-size - 8px !default;
 
 //Color Usage
-$primary-color: $white;
+$primary-color: $dodger-blue;
 $secondary-color: $black;
 $accent-color: $gray;
 $shadow-color: rgba($black, .2);
 $border-color: $gray;
-$color-text: $black;
+$color-text: $white;
 $color-link: $blue;
+
+$body-color: $cod-gray;
 
 //Path to Assets
 $path--rel: "../images";
