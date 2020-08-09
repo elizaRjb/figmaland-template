@@ -658,8 +658,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "GraphikMedium", "Arial", sans-serif;
-  margin: 0; }
+  margin: 0;
+  font-size: inherit;
+  font-weight: normal;
+  font-family: "GraphikMedium", "Arial", sans-serif; }
 
 img {
   max-width: 100%;
@@ -776,6 +778,28 @@ img {
     line-height: 1.5;
     max-width: 268px;
     letter-spacing: 0.2px; }
+
+.opinion-card {
+  padding: 40px;
+  text-align: left;
+  border-radius: 10px;
+  letter-spacing: 0.2px;
+  border: 1px solid #5C5C5C; }
+  .opinion-card__header {
+    margin-bottom: 30px; }
+  .opinion-card__image {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 24px; }
+    .opinion-card__image img {
+      width: 100%; }
+  .opinion-card__header-text {
+    width: calc(100% - 74px);
+    font: normal normal 1rem/1.5 "GraphikMedium", "Arial", sans-serif; }
+  .opinion-card__text {
+    font: normal normal 1rem/1.5 "Graphik", "Arial", sans-serif; }
 
 .main-container-wrapper {
   min-width: 320px;
@@ -1203,6 +1227,30 @@ img {
   width: 176px;
   padding: 13px;
   margin-top: 50px; }
+
+.testimonials-section__content {
+  max-width: 352px;
+  margin: 60px auto 0; }
+  @media (min-width: 768px) {
+    .testimonials-section__content {
+      max-width: 883px; } }
+
+@media (min-width: 768px) {
+  .testimonials-section__row {
+    margin: 0 -12px 20px; }
+    .testimonials-section__row:last-child {
+      margin-bottom: 0; } }
+
+.testimonials-section__col {
+  margin-bottom: 23px; }
+  @media (min-width: 768px) {
+    .testimonials-section__col {
+      width: 50%;
+      float: left;
+      padding: 0 12px;
+      margin-bottom: 0; } }
+  .testimonials-section__col--no-margin {
+    margin-bottom: 0; }
 
 @media (min-width: 576px) {
   .is-collapsed-mobile {

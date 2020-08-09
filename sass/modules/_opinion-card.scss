@@ -1,0 +1,32 @@
+.opinion-card {
+  padding: 40px;
+  text-align: left;
+  border-radius: 10px;
+  letter-spacing: 0.2px;
+  border: 1px solid $scorpion;
+
+  @include e(header) {
+    margin-bottom: 30px;
+  }
+
+  @include e(image) {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 24px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @include e(header-text) {
+    width: calc(100% - 74px);
+    font: normal normal 1rem/1.5 $font-family--primary;
+  }
+
+  @include e(text) {
+    font: normal normal 1rem/1.5 $font-family--secondary;
+  }
+}
