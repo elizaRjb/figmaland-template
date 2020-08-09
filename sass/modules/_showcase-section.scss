@@ -1,0 +1,75 @@
+.showcase-section {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include e(content) {
+    @include mq(md) {
+      height: 370px;
+      display: flex;
+      margin: 0 auto;
+      text-align: left;
+      overflow: hidden;
+      max-width: 1219px;
+      border-radius: 33px;
+      align-items: center;
+      background-color: $mine-shaft;
+      -moz-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+      box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  @include e(text-content) {
+    max-width: 356px;
+    margin: 0 auto 106px;
+
+    @include mq(md) {
+      width: 52%;
+      margin: 0;
+      max-width: none;
+      padding: 0 30px;
+    }
+
+    @include mq(lg) {
+      padding: 0 37px 0 94px;
+    }
+  }
+
+  @include e(primary-btn) {
+    width: 232px;
+    padding: 14px;
+    line-height: 1.47;
+    margin: 10px auto 0;
+    font-size: 1.0625rem;
+
+    @include mq(md) {
+      margin: 0;
+    }
+
+    @include mq(lg) {
+      margin-top: 10px;
+    }
+  }
+
+  @include e(image-content) {
+    margin: 0 auto;
+    max-width: 450px;
+
+    @include mq(md) {
+      margin: 0;
+      width: 48%;
+      height: 100%;
+      max-width: none;
+      overflow: hidden;
+      padding-top: 100px;
+    }
+
+    @include mq(lg) {
+      padding-top: 36px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
