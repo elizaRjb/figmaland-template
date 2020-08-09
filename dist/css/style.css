@@ -885,9 +885,10 @@ img {
     margin-left: 8px;
     border: 1px solid;
     border-color: transparent;
-    background: transparent url("../images/menu.svg") no-repeat center; }
+    background: transparent url("../images/menu.svg") no-repeat center;
+    background-size: 75%; }
     .header__menu-btn:hover, .header__menu-btn:focus {
-      border-color: #5C5C5C;
+      border-color: #fff;
       transition: all 0.25s ease-in; }
     @media (min-width: 375px) {
       .header__menu-btn {

@@ -103,10 +103,11 @@
     border: 1px solid;
     border-color: transparent;
     background: transparent url('../images/menu.svg') no-repeat center;
+    background-size: 75%;
 
     &:hover,
     &:focus {
-      border-color: $scorpion;
+      border-color: $white;
       transition: all 0.25s ease-in;
     }
 
