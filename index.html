@@ -88,7 +88,7 @@
     </section>
     <section class="section contents-section">
       <div class="container">
-        <h2 class="section__heading">CONTENTS</h2>
+        <h2 class="section__heading">Contents</h2>
         <p class="section__text contents-section__text">We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
         <div class="contents-section__cards-container-wrapper">
           <div class="contents-section__cards-container">
@@ -112,10 +112,32 @@
         </div>
       </div>
     </section>
+    <section class="section gallery-section">
+      <div class="container">
+        <h2 class="section__heading">Gallery</h2>
+        <p class="section__text gallery-section__text">We focus on ergonomics and meeting you where you work. <br class="gallery-section__line-break" /> It's only a keystroke away.</p>
+        <div class="gallery-section__content">
+          <div class="gallery-section__top-content-wrapper">
+            <div id="galleryTop" class="gallery-section__top-content"></div>
+          </div>
+          <div class="gallery-section__bottom-content-wrapper">
+            <div id="galleryBottom" class="gallery-section__bottom-content"></div>
+          </div>
+        </div>
+        <a href="#" class="ghost-btn gallery-section__ghost-btn" title="See more photos">See more</a>
+      </div>
+    </section>
   </div>
 
 
   <script>
+    function isDeviceMobile() {
+      // device detection
+      return /iPhone|iPod|Android|Windows Phone/i.test(navigator.userAgent);
+    }
+
+
+    // Code for Burger Menu
     var showNav = false;
     var nav = document.getElementById('nav');
     var burgerMenuBtn = document.getElementById('burgerMenuBtn');
@@ -128,6 +150,72 @@
       } else {
         nav.classList.remove('header__nav--open');
       }
+    };
+
+    // Code for loading gallery images
+    var galleryImagesTopMobile = [
+      'gallery-image-1.jpg',
+      'gallery-image-2.jpg',
+      'gallery-image-3.jpg',
+      'gallery-image-4.jpg'
+    ];
+
+    var galleryImagesTopTablet = [
+      'gallery-image-1.jpg',
+      'gallery-image-5.jpg',
+      'gallery-image-6.jpg',
+      'gallery-image-7.jpg'
+    ];
+
+    var galleryImagesBottom = [
+      'gallery-image-8.jpg',
+      'gallery-image-9.jpg',
+      'gallery-image-10.jpg'
+    ]
+
+    var galleryTopSection = document.getElementById('galleryTop');
+    var galleryBottomSection = document.getElementById('galleryBottom');
+
+    function loadGalleryImages(imagelist, imageClassName, node) {
+      var itemList = [];
+
+      for (var i = 0; i < imagelist.length; i++) {
+        var item = document.createElement('div');
+
+        item.classList.add(imageClassName + '-wrapper');
+
+        var itemContent = document.createElement('div');
+        itemContent.classList.add(imageClassName);
+        itemContent.style.backgroundImage = 'url("./images/' + imagelist[i] + '")';
+
+        item.appendChild(itemContent);
+
+        node.appendChild(item);
+      }
+    }
+
+    function loadGalleryTopImages() {
+      var isMobile = isDeviceMobile();
+      console.log(isMobile)
+
+      var itemClassName = 'gallery-section__top-image';
+
+      if (isMobile) {
+        loadGalleryImages(galleryImagesTopMobile, itemClassName, galleryTopSection);
+      } else {
+        loadGalleryImages(galleryImagesTopTablet, itemClassName, galleryTopSection);
+      }
+    }
+
+    function loadGalleryBottomImages() {
+      var itemClassName = 'gallery-section__bottom-image';
+
+      loadGalleryImages(galleryImagesBottom, itemClassName, galleryBottomSection);
+    }
+
+    window.onload = function() {
+      loadGalleryTopImages();
+      loadGalleryBottomImages();
     };
   </script>
 </body>

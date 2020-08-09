@@ -1,0 +1,128 @@
+.gallery-section {
+  @include e(text) {
+    max-width: 363px;
+
+    @include mq(md) {
+      max-width: 571px;
+    }
+  }
+
+  @include e(line-break) {
+    display: none;
+
+    @include mq(345) {
+      display: initial;
+    }
+  }
+
+  @include e(content) {
+    margin-top: 54px;
+  }
+
+  @include e(top-content-wrapper) {
+    margin: 0 auto;
+    padding: 0 35px;
+    max-width: 400px;
+
+    @include mq(md) {
+      padding: 0;
+      max-width: 999px;
+    }
+  }
+
+  @include e(top-content) {
+    margin: 0 -16px;
+  }
+
+  @include e(top-image-wrapper) {
+    margin-bottom: 33px;
+
+    @include mq(md) {
+      margin: 0;
+      width: 25%;
+      float: left;
+      padding: 0 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include e(top-image) {
+    content: '';
+    width: 100%;
+    height: 285px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+
+    @include mq(md) {
+      height: 170px;
+    }
+
+    @include mq(lg) {
+      height: 285px;
+    }
+  }
+
+  @include e(bottom-content-wrapper) {
+    display: none;
+    max-width: 1087px;
+    margin: 44px auto 0;
+
+    @include mq(md) {
+      display: block;
+    }
+  }
+
+  @include e(bottom-content) {
+    margin: 0 -16px;
+  }
+
+  @include e(bottom-image-wrapper) {
+    float: left;
+    padding: 0 16px;
+
+    &:first-child {
+      width: 37%;
+    }
+
+    &:nth-child(2) {
+      width: 24%;
+    }
+
+    &:last-child {
+      width: 39%;
+    }
+  }
+
+  @include e(bottom-image) {
+    content: '';
+    width: 100%;
+    height: 170px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    -moz-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+
+    @include mq(lg) {
+      height: 285px;
+    }
+  }
+
+  @include e(ghost-btn) {
+    width: 158px;
+    padding: 13px;
+    margin-top: 44px;
+    line-height: 1.47;
+    font-size: 1.0625rem;
+  }
+}
