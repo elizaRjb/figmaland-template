@@ -1,0 +1,103 @@
+.footer {
+  padding: 107px 0;
+
+  @include e(content) {
+    margin: 0 auto;
+    max-width: 319px;
+
+    @include mq(md) {
+      max-width: 1031px;
+    }
+  }
+
+  @include e(left-content) {
+    @include mq(md) {
+      float: left;
+      width: 60%;
+    }
+
+    @include mq(lg) {
+      width: 51.5%;
+    }
+  }
+
+  @include e(nav) {
+    margin-bottom: 75px;
+
+    @include mq(md) {
+      margin: 0;
+      float: left;
+      width: 33.33%;
+    }
+  }
+
+  @include e(nav-title) {
+    margin-bottom: 40px;
+    font: normal normal 1.25rem/1.5 $font-family--primary;
+  }
+
+  @include e(nav-list) {
+    li {
+      margin-bottom: 19px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $white;
+        font: normal normal 1rem/1.5 $font-family--primary;
+
+        &:hover,
+        &:focus {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  @include e(right-content) {
+    @include mq(md) {
+      float: right;
+    }
+  }
+
+  @include e(info-section) {
+    margin-bottom: 10px;
+    font: normal normal 1rem/1.5 $font-family--primary;
+
+    img {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    a {
+      color: $white;
+      display: inline-block;
+      vertical-align: middle;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include e(media-links) {
+    margin-top: 30px;
+
+    li {
+      float: left;
+      margin-right: 24px;
+
+      a {
+        display: inline-block;
+      }
+    }
+  }
+}

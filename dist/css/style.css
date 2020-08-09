@@ -1253,8 +1253,7 @@ img {
     margin-bottom: 0; }
 
 .showcase-section {
-  padding-left: 20px;
-  padding-right: 20px; }
+  padding: 104px 20px 0; }
   @media (min-width: 768px) {
     .showcase-section__content {
       height: 370px;
@@ -1309,6 +1308,66 @@ img {
         padding-top: 36px; } }
     .showcase-section__image-content img {
       width: 100%; }
+
+.footer {
+  padding: 107px 0; }
+  .footer__content {
+    margin: 0 auto;
+    max-width: 319px; }
+    @media (min-width: 768px) {
+      .footer__content {
+        max-width: 1031px; } }
+  @media (min-width: 768px) {
+    .footer__left-content {
+      float: left;
+      width: 60%; } }
+  @media (min-width: 992px) {
+    .footer__left-content {
+      width: 51.5%; } }
+  .footer__nav {
+    margin-bottom: 75px; }
+    @media (min-width: 768px) {
+      .footer__nav {
+        margin: 0;
+        float: left;
+        width: 33.33%; } }
+  .footer__nav-title {
+    margin-bottom: 40px;
+    font: normal normal 1.25rem/1.5 "GraphikMedium", "Arial", sans-serif; }
+  .footer__nav-list li {
+    margin-bottom: 19px; }
+    .footer__nav-list li:last-child {
+      margin-bottom: 0; }
+    .footer__nav-list li a {
+      color: #fff;
+      font: normal normal 1rem/1.5 "GraphikMedium", "Arial", sans-serif; }
+      .footer__nav-list li a:hover, .footer__nav-list li a:focus {
+        text-decoration: underline; }
+  @media (min-width: 768px) {
+    .footer__right-content {
+      float: right; } }
+  .footer__info-section {
+    margin-bottom: 10px;
+    font: normal normal 1rem/1.5 "GraphikMedium", "Arial", sans-serif; }
+    .footer__info-section img {
+      margin-right: 10px;
+      vertical-align: middle; }
+    .footer__info-section span {
+      display: inline-block;
+      vertical-align: middle; }
+    .footer__info-section a {
+      color: #fff;
+      display: inline-block;
+      vertical-align: middle; }
+      .footer__info-section a:hover, .footer__info-section a:focus {
+        text-decoration: underline; }
+  .footer__media-links {
+    margin-top: 30px; }
+    .footer__media-links li {
+      float: left;
+      margin-right: 24px; }
+      .footer__media-links li a {
+        display: inline-block; }
 
 @media (min-width: 576px) {
   .is-collapsed-mobile {
