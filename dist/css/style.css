@@ -736,10 +736,10 @@ img {
     text-align: center;
     font: normal 500 1rem/1.5 "GraphikMedium", "Arial", sans-serif; }
     .nav li a:hover, .nav li a:focus {
-      color: #4452FE;
       background-color: rgba(255, 255, 255, 0.05); }
       @media (min-width: 768px) {
         .nav li a:hover, .nav li a:focus {
+          color: #4452FE;
           background-color: transparent; } }
     @media (min-width: 768px) {
       .nav li a {
@@ -883,10 +883,12 @@ img {
     outline: none;
     cursor: pointer;
     margin-left: 8px;
-    background: url("../images/menu.svg") no-repeat center; }
+    border: 1px solid;
+    border-color: transparent;
+    background: transparent url("../images/menu.svg") no-repeat center; }
     .header__menu-btn:hover, .header__menu-btn:focus {
-      transition: all 0.25s ease-in;
-      background-image: url("../images/menu-hover.svg"); }
+      border-color: #5C5C5C;
+      transition: all 0.25s ease-in; }
     @media (min-width: 375px) {
       .header__menu-btn {
         width: 58px;

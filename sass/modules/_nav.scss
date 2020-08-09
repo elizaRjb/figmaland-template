@@ -45,10 +45,10 @@
 
       &:hover,
       &:focus {
-        color: $primary-color;
         background-color: rgba(255, 255, 255, 0.05);
-
+        
         @include mq(md) {
+          color: $primary-color;
           background-color: transparent;
         }
       }
